@@ -1,0 +1,25 @@
+/*layout-content-07*/
+.layout-content-07 h2 {
+  margin-bottom: 2rem; }
+
+figure {
+  width: 100%;
+  margin: 1rem auto; }
+
+.columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.button {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  margin-top: auto;
+  margin-right: auto; }

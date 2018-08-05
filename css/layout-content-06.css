@@ -1,0 +1,35 @@
+/*layout-content-06*/
+.layout-content-06 {
+  text-align: center; }
+
+figure {
+  position: relative;
+  border-radius: 50%;
+  width: 50%;
+  text-align: center;
+  margin: .5rem auto 1rem; }
+  figure:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; }
+  figure img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 400ms transform;
+    transition: 400ms transform;
+    -o-object-fit: cover;
+       object-fit: cover;
+    font-family: "object-fit: cover"; }
+
+@media (min-width: 40em) {
+  .layout-content-06 {
+    padding-top: 2rem; }
+
+  figure {
+    width: 60%; } }

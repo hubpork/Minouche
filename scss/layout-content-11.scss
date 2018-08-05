@@ -1,0 +1,49 @@
+/*layout-content-11*/
+@import 'variables';
+.layout-content-11 h2 {
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.pricing-table { 
+  margin: 0; 
+  list-style: none;
+
+  li {
+    background-color: #ddd;
+    padding: 0.313rem 1rem;
+  }
+
+  li:first-child { 
+    border-radius: 5px 5px 0 0;
+  }
+
+  li:last-child { 
+    padding: 0 1rem 1rem;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .title {
+    padding: 0.5rem 1rem;
+    color: $fontinvert-color;
+    background: $font-color;
+  }
+
+  .title--primary {
+    background-color: $primary-color;  
+  }
+
+  i { 
+    display: inline-block; 
+    margin-right: 5px; 
+    top: 0.5rem;
+    position: relative;
+  } 
+}
+
+

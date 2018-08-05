@@ -1,0 +1,62 @@
+// body font size
+$browser-context: 16;
+
+// function to convert px to em
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em
+}
+
+//breakpoints
+@mixin breakpoint($class) {
+  @if $class == small {
+    @media (min-width: 0) { @content; }
+  }
+ 
+  @else if $class == medium {
+    @media (min-width: 40em) { @content; }
+  }
+
+  @else if $class == mediumheight {
+     @media (min-width: 40em) and (min-height: 31.250em) { @content; }
+  }
+
+  @else if $class == large {
+    @media (min-width: 64em) { @content; }
+  }
+ 
+  @else if $class == xlarge {
+    @media (min-width: 75em) { @content; }
+  }
+
+  @else if $class == xxlarge {
+    @media (min-width: 90em) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: small, medium, large, xlarge, xxlarge";
+  }
+}
+
+@mixin objectfit($mode, $aspect-ratio) {
+  position: relative; // Anchor for img
+
+  &:before { // Generate height space for the img
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: $aspect-ratio; // Aspect ratio
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 400ms transform;
+    object-fit: $mode;
+    font-family: "object-fit: #{$mode}"; // Configure lazysizes' polyfill
+  }
+}

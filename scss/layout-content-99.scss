@@ -1,0 +1,63 @@
+/*layout-content-99*/
+@import 'mixin';
+@import 'variables';
+.layout-content-99 {
+
+}
+
+
+.grid[data-columns] {
+	width: 100%;
+	max-width: 75rem;
+	margin: 0 auto;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+
+		-webkit-column-gap: 1.875rem;
+		-moz-column-gap: 1.875rem;
+		column-gap: 1.875rem;
+	}
+}
+
+.grid[data-columns] > .brick {
+  display: inline-block;
+  width: 100%;
+}
+
+.grid[data-columns] > .brick:nth-child(even) {
+  order: 2;
+}
+
+@media only screen and (min-width: 480px) {
+  .grid[data-columns] > .brick:nth-child(even) {
+    order: 0;
+  }
+}
+
+.brick {
+	font-family: $font-stack;
+  margin: 0 auto 1rem;
+  padding: 0;
+  background: #e35252;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+
+  height: 150px;
+}
+.grid--alt .brick {
+  background: #80cd7e;
+}
+.brick:nth-child(2n) {
+  height: 200px;
+}
+.brick:nth-child(5n) {
+  height: 130px;
+}
+
+
+

@@ -1,0 +1,24 @@
+/*layout-content-06*/
+@import 'mixin';
+@import 'variables';
+.layout-content-06 {
+  text-align: center;
+}
+
+figure {
+  @include objectfit(cover, 100%);
+  border-radius: 50%;
+  width: 50%;
+  text-align: center;
+  margin: .5rem auto 1rem;
+}
+
+@include breakpoint(medium) {
+  .layout-content-06 {
+    padding-top: 2rem;
+  }
+  
+  figure {
+    width: 60%;
+  }
+}

@@ -1,0 +1,73 @@
+/* layout-header-01 */
+@import 'mixin';
+@import 'variables';
+.layout-header-01 {
+  background-color: $island-color;
+  padding: 0;
+}
+
+.header {
+  background-color: $primary-color;
+  width: 100%;
+  height: 5vh;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+.layout-hero {
+  height: 95vh;
+  position: relative;
+  text-align: center;
+}
+
+.layout-hero__primary {
+  color: white;
+  padding-top: 3rem;
+  background-color: $primary-color;
+}
+
+.layout-hero__center-it {
+  display: none;
+  @include breakpoint(mediumheight) {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 0;
+    right:0;
+  }
+}
+
+@include breakpoint(mediumheight) {
+  .layout-hero__mouse {
+    display: inline-block;
+    height: 44px;
+    width: 28px;
+    border-radius: 12px;
+    border: 2px solid $font-color;
+    text-align: center;
+
+    &:after {
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      background-color: $font-color;
+      border-radius: 50%;
+      content: "";
+      animation: scroll 1.3s ease-out infinite forwards;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

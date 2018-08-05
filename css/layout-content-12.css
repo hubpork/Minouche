@@ -1,0 +1,55 @@
+/*layout-content-12*/
+.layout-content-12 h2 {
+  margin-bottom: 3rem; }
+
+.button {
+  display: block;
+  width: 100%; }
+
+.pricing-table {
+  margin: 0 0 1.5rem;
+  list-style: none; }
+  .pricing-table li {
+    background-color: #ddd;
+    padding: 0.313rem 1rem; }
+  .pricing-table li:first-child {
+    border-radius: 5px 5px 0 0; }
+  .pricing-table li:last-child {
+    padding: 0 1rem 1rem;
+    border-radius: 0 0 5px 5px; }
+  .pricing-table i {
+    display: inline-block;
+    margin-right: 5px;
+    top: 0.5rem;
+    position: relative; }
+
+.pricing-table--primary li {
+  background-color: black;
+  color: white; }
+  .pricing-table--primary li:last-child {
+    padding: 0 1rem 1.5rem; }
+
+@media (min-width: 64em) {
+  .recommended {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+    position: relative;
+    z-index: 2; }
+
+  .pricing-table--leftside {
+    margin-right: -0.750rem; }
+    .pricing-table--leftside li:first-child {
+      border-radius: 5px 0 0 0; }
+    .pricing-table--leftside li:last-child {
+      border-radius: 0 0 0 5px; }
+
+  .pricing-table--rightside {
+    margin-left: -0.750rem; }
+    .pricing-table--rightside li:first-child {
+      border-radius: 0 5px 0 0; }
+    .pricing-table--rightside li:last-child {
+      border-radius: 0 0 5px 0; }
+
+  .button.primary {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }

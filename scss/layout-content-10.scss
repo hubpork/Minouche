@@ -1,0 +1,42 @@
+/*layout-content-10*/
+@import 'mixin';
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+figure {
+	position: relative;
+  margin: 0 0 1rem;
+}
+
+figure:before{
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@include breakpoint(medium) {
+  figure {
+    position: relative;
+    margin: 0 0 1.5rem;
+  }
+
+  .callout {
+    margin: 0 0 1.5rem;
+  }
+
+  .ratio1-2__plus:before {
+    padding-top: calc( 200% + 1.5rem );
+  }
+}
+

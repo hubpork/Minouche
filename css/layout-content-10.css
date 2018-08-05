@@ -1,0 +1,39 @@
+/*layout-content-10*/
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+figure {
+  position: relative;
+  margin: 0 0 1rem; }
+
+figure:before {
+  content: "";
+  display: block;
+  padding-top: 50%; }
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+@media (min-width: 40em) {
+  figure {
+    position: relative;
+    margin: 0 0 1.5rem; }
+
+  .callout {
+    margin: 0 0 1.5rem; }
+
+  .ratio1-2__plus:before {
+    padding-top: calc( 200% + 1.5rem ); } }

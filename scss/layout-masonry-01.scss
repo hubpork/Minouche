@@ -1,0 +1,36 @@
+/*layout-masonry-01*/
+@import 'mixin';
+@import 'variables';
+figure {
+  background-color: $island-color;
+}
+
+.masonry {
+  column-gap: 0;
+  position: relative;
+}
+
+@include breakpoint(medium) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+.masonry-container {
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+	margin: 0 0 1rem;
+}
+
+@include breakpoint(medium) {
+  .masonry-container {
+  	padding-left: 0.9375rem;
+  	padding-right: 0.9375rem;
+    break-inside: avoid;
+  }
+}
+
+.masonry-container p > i {
+  margin-right: 0.5rem;
+  font-size: 12px;
+}

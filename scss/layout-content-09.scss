@@ -1,0 +1,36 @@
+/*layout-content-09*/
+@import 'mixin';
+@import 'variables';
+.layout-content-09 h2 {
+  margin-top: 0;
+}
+
+figure {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	height: auto;
+	padding-top: 60%;
+	text-align: center;
+	margin: .5rem auto 1rem;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@include breakpoint(medium) {
+  figure {
+    width: 100%;
+    padding-top: 100%;
+    margin-top: 0.625rem;
+    margin-right: 1.875rem;
+    margin-bottom: 2rem;
+  }
+}
+

@@ -1,0 +1,31 @@
+/*layout-content-08*/
+figure {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+@media (min-width: 40em) {
+  .lead {
+    margin-top: 1rem; }
+
+  figure {
+    position: relative;
+    height: 80vh;
+    margin: 0; }
+    figure:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%; }
+    figure img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      -webkit-transition: 400ms transform;
+      transition: 400ms transform;
+      -o-object-fit: cover;
+         object-fit: cover;
+      font-family: "object-fit: cover"; } }

@@ -1,0 +1,25 @@
+/*layout-content-03*/
+.floated-img {
+  margin-bottom: 1rem; }
+  .floated-img h2 {
+    margin-top: 0; }
+  .floated-img figure {
+    background-color: #ddd;
+    width: 100%;
+    margin-bottom: 1rem; }
+
+@media (min-width: 40em) {
+  .floated-img {
+    margin-bottom: 2rem; }
+    .floated-img figure {
+      float: left;
+      width: 49.19%;
+      max-width: 575px;
+      margin-top: 0.625rem;
+      margin-right: 1.875rem;
+      margin-bottom: 1rem; }
+
+  .floated-img--right figure {
+    float: right;
+    margin-right: 0;
+    margin-left: 1.875rem; } }

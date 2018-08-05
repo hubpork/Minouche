@@ -1,0 +1,21 @@
+/*layout-content-01*/
+@import 'mixin';
+@import 'variables';
+.layout-content-01 {
+  text-align: center;
+}
+
+figure {
+  @include objectfit(cover, 100%);
+  background-color: $island-color;
+  border-radius: 50%;
+  width: 60%;
+  text-align: center;
+  margin: .5rem auto 1rem;
+}
+
+@include breakpoint(medium) {
+  figure {
+    width: 80%;
+  }
+}

@@ -1,0 +1,20 @@
+/*layout-content-07*/
+.layout-content-07 h2 {
+	margin-bottom: 2rem;
+}
+
+figure {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+}
+
+.button {
+	align-self: flex-end;
+	margin-top: auto;
+	margin-right: auto;
+}
